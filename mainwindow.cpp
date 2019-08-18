@@ -70,14 +70,18 @@ void MainWindow::setCustomQToolBar1()
     QWidget *widget;
     QWidget *widget_2;
     QWidget *widget_3;
+    QWidget *widget_4;
     QVBoxLayout *verticalLayout;
     QVBoxLayout *verticalLayout_2;
     QVBoxLayout *verticalLayout_3;
+    QVBoxLayout *verticalLayout_4;
     QHBoxLayout *horizontalLayout;
     QToolButton *toolButton_2;
     QToolButton *toolButton_3;
+    QToolButton *toolButton_4;
     QLabel *label;
     QLabel *label_2;
+    QLabel *label_3;
     QIcon icon;
 
     widget = new QWidget();
@@ -114,7 +118,8 @@ void MainWindow::setCustomQToolBar1()
 
     widget_3 = new QWidget();
     verticalLayout_3 = new QVBoxLayout(widget_3);
-    verticalLayout_3->setContentsMargins(0, 0, 0, 0);
+    verticalLayout_3->setContentsMargins(0, 0, 10, 0);
+    verticalLayout_3->setSpacing(3);
 
     label_2 = new QLabel(widget_3);
     label_2->setText("QLabel");
@@ -126,6 +131,30 @@ void MainWindow::setCustomQToolBar1()
     widget_3->setLayout(verticalLayout_3);
     horizontalLayout->addWidget(widget_3);
 
+    widget_4 = new QWidget();
+    verticalLayout_4 = new QVBoxLayout(widget_4);
+    verticalLayout_4->setContentsMargins(0, 0, 10, 0);
+    verticalLayout_4->setSpacing(3);
+
+    label_3 = new QLabel(widget_4);
+    label_3->setText("QLabel");
+    verticalLayout_4->addWidget(label_3);
+
+    createQLabelQSpinBox(verticalLayout_4);
+
+    toolButton_4 = new QToolButton(widget_4);
+    icon.addFile(QString::fromUtf8(":/res/icons8-full-image-40.png"), QSize(), QIcon::Normal, QIcon::Off);
+    toolButton_4->setIcon(icon);
+    toolButton_4->setIconSize(QSize(20, 20));
+    toolButton_4->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
+    toolButton_4->setAutoRaise(false);
+    toolButton_4->setText("QAction7");
+    toolButton_4->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Ignored);
+
+    verticalLayout_4->addWidget(toolButton_4);
+
+    widget_4->setLayout(verticalLayout_4);
+    horizontalLayout->addWidget(widget_4);
     verticalLayout->addLayout(horizontalLayout);
 
     label = new QLabel();

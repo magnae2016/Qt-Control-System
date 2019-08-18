@@ -43,6 +43,12 @@
            <property name="title">
             <string>GroupBox</string>
            </property>
+           <property name="flat">
+            <bool>false</bool>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
            <layout class="QHBoxLayout" name="horizontalLayout_3">
             <property name="spacing">
              <number>6</number>
@@ -442,6 +448,15 @@
                <widget class="QPushButton" name="pushButton_17">
                 <property name="text">
                  <string>PushButton</string>
+                </property>
+                <property name="autoDefault">
+                 <bool>false</bool>
+                </property>
+                <property name="default">
+                 <bool>false</bool>
+                </property>
+                <property name="flat">
+                 <bool>false</bool>
                 </property>
                </widget>
               </item>

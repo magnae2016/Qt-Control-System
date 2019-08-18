@@ -1844,7 +1844,6 @@
                  <attribute name="title">
                   <string>Tab 1</string>
                  </attribute>
-                 <layout class="QVBoxLayout" name="verticalLayout_6"/>
                 </widget>
                 <widget class="QWidget" name="tab_4">
                  <attribute name="title">
@@ -1865,6 +1864,9 @@
               </sizepolicy>
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_4">
+              <property name="spacing">
+               <number>0</number>
+              </property>
               <property name="leftMargin">
                <number>0</number>
               </property>
@@ -1890,6 +1892,9 @@
                   <string>Tab 1</string>
                  </attribute>
                  <layout class="QVBoxLayout" name="verticalLayout_10">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
                   <property name="leftMargin">
                    <number>0</number>
                   </property>
@@ -2034,6 +2039,128 @@
                      </layout>
                     </item>
                     <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_5">
+                      <item>
+                       <widget class="QFrame" name="frame_5">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="frameShape">
+                         <enum>QFrame::WinPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Sunken</enum>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_6">
+                         <item>
+                          <widget class="QTableWidget" name="tableWidget_3">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>201</width>
+                             <height>151</height>
+                            </size>
+                           </property>
+                           <property name="verticalScrollBarPolicy">
+                            <enum>Qt::ScrollBarAlwaysOff</enum>
+                           </property>
+                           <property name="horizontalScrollBarPolicy">
+                            <enum>Qt::ScrollBarAlwaysOff</enum>
+                           </property>
+                           <property name="autoScroll">
+                            <bool>false</bool>
+                           </property>
+                           <property name="alternatingRowColors">
+                            <bool>false</bool>
+                           </property>
+                           <property name="verticalScrollMode">
+                            <enum>QAbstractItemView::ScrollPerPixel</enum>
+                           </property>
+                           <property name="horizontalScrollMode">
+                            <enum>QAbstractItemView::ScrollPerPixel</enum>
+                           </property>
+                           <property name="wordWrap">
+                            <bool>false</bool>
+                           </property>
+                           <property name="cornerButtonEnabled">
+                            <bool>false</bool>
+                           </property>
+                           <property name="rowCount">
+                            <number>15</number>
+                           </property>
+                           <property name="columnCount">
+                            <number>20</number>
+                           </property>
+                           <attribute name="horizontalHeaderVisible">
+                            <bool>false</bool>
+                           </attribute>
+                           <attribute name="horizontalHeaderCascadingSectionResizes">
+                            <bool>false</bool>
+                           </attribute>
+                           <attribute name="horizontalHeaderMinimumSectionSize">
+                            <number>10</number>
+                           </attribute>
+                           <attribute name="horizontalHeaderDefaultSectionSize">
+                            <number>10</number>
+                           </attribute>
+                           <attribute name="verticalHeaderVisible">
+                            <bool>false</bool>
+                           </attribute>
+                           <attribute name="verticalHeaderMinimumSectionSize">
+                            <number>10</number>
+                           </attribute>
+                           <attribute name="verticalHeaderDefaultSectionSize">
+                            <number>10</number>
+                           </attribute>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
                      <widget class="QTableWidget" name="tableWidget">
                       <property name="frameShape">
                        <enum>QFrame::NoFrame</enum>
@@ -2152,6 +2279,8 @@
                      </widget>
                     </item>
                    </layout>
+                  </item>
+                 </layout>
                   </item>
                  </layout>
                 </widget>
